@@ -69,6 +69,11 @@
       <artifactId>quarkus-resteasy-jackson</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-openapi</artifactId>
+    </dependency>
+
     <!-- UI -->
     <dependency>
       <groupId>io.quarkus</groupId>

@@ -14,6 +14,11 @@
         <a class="navbar-brand" href="https://www.optaplanner.org">
             <img src="optaPlannerLogo200px.png" alt="OptaPlanner logo">
         </a>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li class="navbar-brand">
+                <a id="api-link" href="#">Rest Api</a>
+            </li>
+        </ul>
     </nav>
     <div class="sticky-top d-flex justify-content-center align-items-center" aria-live="polite" aria-atomic="true">
         <div id="notificationPanel" style="position: absolute; top: .5rem;"></div>
@@ -55,5 +60,9 @@
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 <script src="/webjars/js-joda/dist/js-joda.min.js"></script>
 <script src="/app.js"></script>
+<script>
+    const apiLink = document.getElementById('api-link');
+    apiLink.href = document.location.origin + '/q/swagger-ui';
+</script>
 </body>
 </html>
