@@ -43,8 +43,9 @@ createSetupBranchJob()
 setupSpecificBuildChainNightlyJob('native')
 setupSpecificBuildChainNightlyJob('quarkus-main')
 setupSpecificBuildChainNightlyJob('quarkus-branch')
-setupSpecificBuildChainNightlyJob('quarkus-lts')
-setupSpecificBuildChainNightlyJob('native-lts')
+// this should not be needed as above runs on branches too and we have only 2.13.x quarkus now as the last supported
+//setupSpecificBuildChainNightlyJob('quarkus-lts')
+//setupSpecificBuildChainNightlyJob('native-lts')
 
 // Tools
 KogitoJobUtils.createQuarkusUpdateToolsJob(this, 'optaplanner-quickstarts', [
